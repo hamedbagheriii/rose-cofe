@@ -26,7 +26,9 @@ body{
 .navbar{
     background: linear-gradient(-150deg,#f0bb6d,#ffffffde);
     max-width: 1200px;
-
+    box-shadow: 0 0 30px #f0bc6d8c;
+    // border: 1px solid #333;
+    
     .offcanvas{
         background: linear-gradient(-150deg,#f0bb6d,#ffffffde);
         
@@ -94,7 +96,7 @@ body{
         // ! menu 
         width: 100%;
         max-width: 700px;
-        border: 2px solid rgb(255, 255, 255);
+        border: 3px solid rgb(255, 255, 255);
 
         
 
@@ -354,4 +356,22 @@ body{
         padding: 0px 10px 0px 0px;
     }
     
+}
+
+
+// ! footer
+.footer{
+    background:  linear-gradient(-150deg,#f0bc6db3,#ffffffdf) , url("/media/IMG/download.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 1200px;
+    box-shadow: 0 0 30px #f0bc6db0;
+    border: 3px solid #333;
+    border-bottom: none;
+
+    .text-white,.text-dark{
+        text-shadow:  0 0 10px #ff9900c1;
+        transition: all 0.2s ease;
+    }
 }

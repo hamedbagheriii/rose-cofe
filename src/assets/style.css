@@ -22,6 +22,7 @@ body {
 .navbar {
   background: linear-gradient(-150deg, #f0bb6d, rgba(255, 255, 255, 0.8705882353));
   max-width: 1200px;
+  box-shadow: 0 0 30px rgba(240, 188, 109, 0.5490196078);
 }
 .navbar .offcanvas {
   background: linear-gradient(-150deg, #f0bb6d, rgba(255, 255, 255, 0.8705882353));
@@ -72,7 +73,7 @@ body {
 .menu {
   width: 100%;
   max-width: 700px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
 }
 .menu .Title p {
   font-family: "vazir-bold";
@@ -275,6 +276,21 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0px 10px 0px 0px;
+}
+
+.footer {
+  background: linear-gradient(-150deg, rgba(240, 188, 109, 0.7019607843), rgba(255, 255, 255, 0.8745098039)), url("/media/IMG/download.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1200px;
+  box-shadow: 0 0 30px rgba(240, 188, 109, 0.6901960784);
+  border: 3px solid #333;
+  border-bottom: none;
+}
+.footer .text-white, .footer .text-dark {
+  text-shadow: 0 0 10px rgba(255, 153, 0, 0.7568627451);
+  transition: all 0.2s ease;
 }
 
 /*# sourceMappingURL=style.css.map */
