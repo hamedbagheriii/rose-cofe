@@ -25,7 +25,7 @@ body {
   box-shadow: 0 0 30px rgba(240, 188, 109, 0.5490196078);
 }
 .navbar .offcanvas {
-  background: linear-gradient(-150deg, #f0bb6d, rgba(255, 255, 255, 0.8705882353));
+  background: linear-gradient(-150deg, #f0bb6d, #ffffff);
 }
 @media screen and (min-width: 890px) {
   .navbar .offcanvas {
@@ -38,7 +38,7 @@ body {
   font-size: 19px;
 }
 .navbar .offcanvas .dropdown-menu {
-  background: linear-gradient(-180deg, #f0bb6d, rgba(255, 255, 255, 0.4117647059));
+  background: linear-gradient(-180deg, #f0bb6d, #f3f3f3);
   border: none;
   outline: none;
 }
@@ -49,6 +49,32 @@ body {
 .navbar .offcanvas .dropdown-menu .dropdown-item:hover {
   background-color: rgba(255, 255, 255, 0.394);
   color: #000;
+}
+.navbar .offcanvas .nav-item {
+  transition: all 0.4s ease;
+  padding: 20px 10px;
+  border-radius: 12px;
+  font-size: 20px;
+}
+.navbar .offcanvas .nav-item a {
+  transition: all 0.4s ease;
+}
+@media screen and (min-width: 890px) {
+  .navbar .offcanvas .nav-item {
+    padding: 0;
+  }
+}
+.navbar .offcanvas .nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.394);
+}
+.navbar .offcanvas .nav-item:hover a:not(.dropdown-menu a) {
+  color: #000 !important;
+}
+@media screen and (min-width: 890px) {
+  .navbar .offcanvas .nav-item:hover {
+    background: transparent;
+    padding: 0;
+  }
 }
 .navbar .formSearch {
   direction: ltr;
@@ -279,6 +305,8 @@ body {
 }
 
 .footer {
+  position: relative;
+  bottom: 0;
   background: linear-gradient(-150deg, rgba(240, 188, 109, 0.7019607843), rgba(255, 255, 255, 0.8745098039)), url("/media/IMG/download.jpg");
   background-repeat: no-repeat;
   background-size: cover;

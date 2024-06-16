@@ -1079,13 +1079,13 @@ getData()
 //! set bg height
 function setBg(){
    if (document.querySelector('.content-menu').children.length == 1) {
-        document.body.style.height=`100vh`
+        document.querySelector('.menu').style.height=`70vh`
         setTimeout(() => {
-            document.body.style.height=null;
+            document.querySelector('.menu').style.height=null;
         }, 1000);
     }
     else{
-        document.body.style.height=null;
+        document.querySelector('.menu').style.height=null;
     }
 }
 
